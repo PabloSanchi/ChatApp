@@ -3,12 +3,12 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCH22JP8c16Bsxi4C6jZSJDXZLVq7iG8Xg",
-  authDomain: "whatsappclone-be7c5.firebaseapp.com",
-  projectId: "whatsappclone-be7c5",
-  storageBucket: "whatsappclone-be7c5.appspot.com",
-  messagingSenderId: "172918426826",
-  appId: "1:172918426826:web:14c577d3eec8981557b833"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGIN_SENDER_ID,
+  appId: process.env.APP_ID
 };
 
 getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();

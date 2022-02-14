@@ -9,7 +9,7 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import MicIcon from '@mui/icons-material/Mic';
 import { useCollection } from 'react-firebase-hooks/firestore';
 import { useRouter } from 'next/router';
-import { collection, orderBy, setDoc, query, serverTimestamp, addDoc, where  } from 'firebase/firestore';
+import { collection, orderBy, setDoc, query, serverTimestamp, addDoc, where, doc  } from 'firebase/firestore';
 import Message from '../components/Message';
 import getTargetEmail from '../utils/getTargetEmail';
 import TimeAgo from 'timeago-react';
